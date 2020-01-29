@@ -21,11 +21,11 @@ else
 end
 
 gem 'yard', '~> 0.9.22', :require => false
+gem 'redcarpet'
+gem 'github-markup'
 
 ### deps for rdoc.info
 group :documentation do
-  gem 'redcarpet',     '2.1.1', :platform => :mri
-  gem 'github-markup', '0.7.2', :platform => :mri
 end
 
 if RUBY_VERSION < '2.0.0' || RUBY_ENGINE == 'java'
